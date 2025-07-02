@@ -1,0 +1,575 @@
+2025-07-02 08:40:22,636 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:40:22,647 - ERROR - main_logger - main.py:192 - Unexpected error: cannot import name 'MLParameters' from 'config.strategy_params' (c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\strategy_params.py)
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 181, in main
+    from example import run_backtest_example
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 36, in <module>
+    from ml.predictor import MLPredictor, FeatureEngineering
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\ml\predictor.py", line 33, in <module>
+    from config.strategy_params import MLParameters
+ImportError: cannot import name 'MLParameters' from 'config.strategy_params' (c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\strategy_params.py)
+2025-07-02 08:40:22,651 - INFO - main_logger - main.py:195 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:41:28,689 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:41:28,696 - ERROR - main_logger - main.py:192 - Unexpected error: 'int' object has no attribute 'upper'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 182, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 42, in run_backtest_example
+    logger = setup_logging(log_level=logging.INFO)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\utils\logger.py", line 127, in setup_logging
+    level = level_map.get(log_level.upper(), logging.INFO)
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'upper'
+2025-07-02 08:41:28,700 - INFO - main_logger - main.py:195 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:42:13,559 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:42:13,568 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:42:13,571 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:42:13,574 - ERROR - main_logger - main.py:192 - Unexpected error: 'StrategyParameters' object has no attribute 'load_from_file'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 182, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 47, in run_backtest_example
+    params.load_from_file('config/default_params.json')
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StrategyParameters' object has no attribute 'load_from_file'
+2025-07-02 08:42:13,578 - INFO - main_logger - main.py:195 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:42:59,073 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:42:59,080 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:42:59,081 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:42:59,083 - INFO - main_logger - strategy_params.py:205 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:42:59,084 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:42:59,097 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:42:59,098 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:44:10,872 - ERROR - main_logger - main.py:192 - Unexpected error: MarketData.__init__() missing 1 required positional argument: 'mt5_config'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 182, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 59, in run_backtest_example
+    backtest_engine = BacktestEngine(params.backtest_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\backtesting\backtest_engine.py", line 355, in __init__
+    self.market_data = MarketData()
+                       ^^^^^^^^^^^^
+TypeError: MarketData.__init__() missing 1 required positional argument: 'mt5_config'
+2025-07-02 08:44:10,878 - INFO - main_logger - main.py:195 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:46:47,981 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:46:47,993 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:46:47,998 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:46:47,999 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:46:48,000 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:46:48,001 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:46:48,002 - INFO - main_logger - strategy_params.py:205 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:46:48,004 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:46:48,008 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:46:48,011 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:46:52,119 - ERROR - main_logger - main.py:197 - Unexpected error: 'BacktestParams' object has no attribute 'initial_balance'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 59, in run_backtest_example
+    backtest_engine = BacktestEngine(params.backtest_params, mt5_config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\backtesting\backtest_engine.py", line 358, in __init__
+    self.initial_balance = params.initial_balance
+                           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BacktestParams' object has no attribute 'initial_balance'
+2025-07-02 08:46:52,123 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:47:43,621 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:47:43,633 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:47:43,638 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:47:43,638 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:47:43,641 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:47:43,641 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:47:43,643 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:47:43,644 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:47:43,647 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:47:43,648 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:47:44,347 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSD from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:47:44,348 - ERROR - main_logger - main.py:197 - Unexpected error: 'MarketData' object has no attribute 'get_historical_data'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 69, in run_backtest_example
+    historical_data = market_data.get_historical_data(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MarketData' object has no attribute 'get_historical_data'
+2025-07-02 08:47:44,351 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:49:28,506 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:49:28,513 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:49:28,519 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:49:28,519 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:49:28,521 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:49:28,522 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:49:28,523 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:49:28,525 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:49:28,528 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:49:28,529 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:49:29,142 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSD from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:49:29,146 - WARNING - main_logger - market_data.py:213 - No historical data received for EURUSD on timeframe 16385
+2025-07-02 08:49:29,147 - ERROR - main_logger - example.py:74 - Failed to fetch historical data
+2025-07-02 08:49:29,148 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 08:49:29,149 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:50:22,682 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:50:22,689 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:50:22,695 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:50:22,696 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:50:22,697 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:50:22,697 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:50:22,698 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:50:22,699 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:50:22,704 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:50:22,704 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:50:23,297 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSD from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:50:23,299 - WARNING - main_logger - market_data.py:213 - No historical data received for EURUSD on timeframe 16385
+2025-07-02 08:50:23,300 - ERROR - main_logger - example.py:74 - Failed to fetch historical data
+2025-07-02 08:50:23,301 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 08:50:23,302 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:54:55,989 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:54:55,996 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:54:56,001 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:54:56,002 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:54:56,004 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:54:56,006 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:54:56,007 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:54:56,010 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:54:56,015 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:54:56,016 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:54:56,628 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSD from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:54:56,630 - WARNING - main_logger - market_data.py:213 - No historical data received for EURUSD on timeframe 16385
+2025-07-02 08:54:56,631 - ERROR - main_logger - example.py:74 - Failed to fetch historical data
+2025-07-02 08:54:56,632 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 08:54:56,633 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:57:22,640 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:57:22,652 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:57:22,656 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:57:22,657 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:57:22,659 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:57:22,659 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:57:22,660 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:57:22,661 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:57:22,665 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:57:22,666 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:57:23,324 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:57:38,789 - ERROR - main_logger - main.py:197 - Unexpected error: SMCStrategy.__init__() missing 2 required positional arguments: 'order_manager' and 'params'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 84, in run_backtest_example
+    smc_strategy = SMCStrategy(params.smc_params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SMCStrategy.__init__() missing 2 required positional arguments: 'order_manager' and 'params'
+2025-07-02 08:57:38,792 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:58:30,998 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:58:31,010 - ERROR - main_logger - main.py:197 - Unexpected error: No module named 'visualization'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 181, in main
+    from example import run_backtest_example
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 34, in <module>
+    from visualization.performance_visualizer import PerformanceVisualizer
+ModuleNotFoundError: No module named 'visualization'
+2025-07-02 08:58:31,012 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 08:59:18,903 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:59:18,916 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:59:18,920 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:59:18,922 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:59:18,924 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 08:59:18,924 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 08:59:18,925 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 08:59:18,926 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 08:59:18,929 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 08:59:18,930 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 08:59:20,242 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 08:59:20,247 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 08:59:20,248 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 08:59:20,256 - ERROR - main_logger - main.py:197 - Unexpected error: 'SMCStrategy' object has no attribute 'run_on_bar'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 90, in run_backtest_example
+    backtest_result = backtest_engine.run_backtest(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\backtesting\backtest_engine.py", line 408, in run_backtest
+    strategy_result = strategy.run_on_bar(symbol, timeframe, current_time, current_bar, previous_bars)
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SMCStrategy' object has no attribute 'run_on_bar'
+2025-07-02 08:59:20,261 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:02:04,834 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:02:04,848 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:02:04,860 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:02:04,861 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:02:04,863 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:02:04,863 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:02:04,864 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:02:04,866 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:02:04,873 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:02:04,874 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:02:05,597 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:02:05,602 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:02:05,603 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:02:05,614 - ERROR - main_logger - main.py:197 - Unexpected error: 'MarketData' object has no attribute 'calculate_atr'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 90, in run_backtest_example
+    backtest_result = backtest_engine.run_backtest(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\backtesting\backtest_engine.py", line 408, in run_backtest
+    strategy_result = strategy.run_on_bar(symbol, timeframe, current_time, current_bar, previous_bars)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\strategies\smc_strategy.py", line 1726, in run_on_bar
+    self._generate_trade_setups(symbol, timeframe, df)
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\strategies\smc_strategy.py", line 1453, in _generate_trade_setups
+    atr = self.market_data.calculate_atr(symbol, timeframe, self.params.atr_period)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MarketData' object has no attribute 'calculate_atr'
+2025-07-02 09:02:05,620 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:02:58,564 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:02:58,572 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:02:58,586 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:02:58,586 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:02:58,588 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:02:58,590 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:02:58,591 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:02:58,592 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:02:58,595 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:02:58,595 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:02:59,254 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:02:59,260 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:02:59,261 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:03:03,241 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:03:03,241 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:03:03,242 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:03:03,243 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:03:03,244 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:03:03,245 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:03:03,245 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:03:03,246 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:03:03,246 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:03:03,247 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:03:03,247 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:03:03,248 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:03:03,248 - ERROR - main_logger - main.py:197 - Unexpected error: 'BacktestResult' object has no attribute 'total_trades'
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "c:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 96, in run_backtest_example
+    logger.info(f"Total trades: {backtest_result.total_trades}")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BacktestResult' object has no attribute 'total_trades'
+2025-07-02 09:03:03,252 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:03:57,543 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:03:57,556 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:03:57,560 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:03:57,561 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:03:57,565 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:03:57,566 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:03:57,567 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:03:57,567 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:03:57,571 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:03:57,572 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:03:58,223 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:03:58,227 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:03:58,228 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:04:01,832 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:04:01,833 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:04:01,833 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:04:01,834 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:04:01,834 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:04:01,834 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:04:01,835 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:04:01,835 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:04:01,836 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:04:01,836 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:04:01,837 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:04:01,837 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:04:01,839 - INFO - main_logger - example.py:96 - Total trades: 0
+2025-07-02 09:04:01,840 - INFO - main_logger - example.py:97 - Win rate: 0.00%
+2025-07-02 09:04:01,841 - INFO - main_logger - example.py:98 - Profit factor: 0.00
+2025-07-02 09:04:01,842 - INFO - main_logger - example.py:99 - Sharpe ratio: 0.00
+2025-07-02 09:04:01,845 - ERROR - main_logger - main.py:197 - Unexpected error: 'max_drawdown_pct'
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 100, in run_backtest_example
+    logger.info(f"Max drawdown: {backtest_result.metrics['max_drawdown_pct']:.2f}%")
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_drawdown_pct'
+2025-07-02 09:04:01,848 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:04:43,551 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:04:43,557 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:04:43,563 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:04:43,564 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:04:43,567 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:04:43,568 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:04:43,569 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:04:43,571 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:04:43,575 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:04:43,577 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:04:44,161 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:04:44,166 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:04:44,166 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:04:47,682 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:04:47,683 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:04:47,684 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:04:47,685 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:04:47,685 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:04:47,686 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:04:47,686 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:04:47,686 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:04:47,687 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:04:47,687 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:04:47,688 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:04:47,688 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:04:47,689 - INFO - main_logger - example.py:96 - Total trades: 0
+2025-07-02 09:04:47,689 - INFO - main_logger - example.py:97 - Win rate: 0.00%
+2025-07-02 09:04:47,689 - INFO - main_logger - example.py:98 - Profit factor: 0.00
+2025-07-02 09:04:47,690 - INFO - main_logger - example.py:99 - Sharpe ratio: 0.00
+2025-07-02 09:04:47,690 - ERROR - main_logger - main.py:197 - Unexpected error: 'max_drawdown_pct'
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 100, in run_backtest_example
+    logger.info(f"Max drawdown: {backtest_result.metrics['max_drawdown_pct']:.2f}%")
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_drawdown_pct'
+2025-07-02 09:04:47,696 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:06:09,908 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:06:09,923 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:06:09,928 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:06:09,929 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:06:09,931 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:06:09,933 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:06:09,936 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:06:09,945 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:06:09,955 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:06:09,966 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:06:10,672 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:06:10,678 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:06:10,679 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:06:14,434 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:06:14,435 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:06:14,435 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:06:14,435 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:06:14,436 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:06:14,436 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:06:14,437 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:06:14,439 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:06:14,439 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:06:14,440 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:06:14,441 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:06:14,441 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:06:14,442 - INFO - main_logger - example.py:97 - Total trades: 0
+2025-07-02 09:06:14,442 - INFO - main_logger - example.py:98 - Win rate: 0.00%
+2025-07-02 09:06:14,443 - INFO - main_logger - example.py:99 - Profit factor: 0.00
+2025-07-02 09:06:14,443 - INFO - main_logger - example.py:100 - Sharpe ratio: 0.00
+2025-07-02 09:06:14,444 - INFO - main_logger - example.py:101 - Max drawdown: 0.00%
+2025-07-02 09:06:14,444 - INFO - main_logger - example.py:102 - Net profit: 0.00
+2025-07-02 09:06:14,445 - INFO - main_logger - example.py:105 - Generating visualizations
+2025-07-02 09:06:16,353 - ERROR - main_logger - main.py:197 - Unexpected error: 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 109, in run_backtest_example
+    visualizer.plot_equity_curve(backtest_result.equity_curve)
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\utils\visualization.py", line 324, in plot_equity_curve
+    ax.plot(equity_data.index, equity_data.values, label='Strategy', linewidth=2)
+                               ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2025-07-02 09:06:16,357 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:06:55,257 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:06:55,278 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:06:55,284 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:06:55,286 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:06:55,288 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:06:55,289 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:06:55,291 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:06:55,292 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:06:55,296 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:06:55,297 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:06:55,946 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:06:55,949 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:06:55,951 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:07:00,023 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:07:00,024 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:07:00,025 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:07:00,026 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:07:00,027 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:07:00,029 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:07:00,030 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:07:00,031 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:07:00,032 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:07:00,033 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:07:00,033 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:07:00,034 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:07:00,035 - INFO - main_logger - example.py:97 - Total trades: 0
+2025-07-02 09:07:00,035 - INFO - main_logger - example.py:98 - Win rate: 0.00%
+2025-07-02 09:07:00,036 - INFO - main_logger - example.py:99 - Profit factor: 0.00
+2025-07-02 09:07:00,038 - INFO - main_logger - example.py:100 - Sharpe ratio: 0.00
+2025-07-02 09:07:00,038 - INFO - main_logger - example.py:101 - Max drawdown: 0.00%
+2025-07-02 09:07:00,039 - INFO - main_logger - example.py:102 - Net profit: 0.00
+2025-07-02 09:07:00,040 - INFO - main_logger - example.py:105 - Generating visualizations
+2025-07-02 09:07:01,420 - ERROR - main_logger - main.py:197 - Unexpected error: 'profit_loss'
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 187, in main
+    run_backtest_example()
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\example.py", line 123, in run_backtest_example
+    visualizer.plot_trade_analysis(backtest_result.trades)
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\utils\visualization.py", line 488, in plot_trade_analysis
+    sns.histplot(trades_df['profit_loss'], kde=True, ax=ax1)
+                 ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\adity\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'profit_loss'
+2025-07-02 09:07:01,433 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:07:23,953 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:07:23,969 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:07:23,974 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:07:23,975 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:07:23,977 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:07:23,977 - INFO - main_logger - example.py:43 - Starting backtest example
+2025-07-02 09:07:23,978 - INFO - main_logger - strategy_params.py:206 - Strategy parameters loaded from config/default_params.json
+2025-07-02 09:07:23,979 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:07:23,982 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:07:23,983 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:07:24,592 - INFO - main_logger - example.py:68 - Fetching historical data for EURUSDm from 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+2025-07-02 09:07:24,597 - INFO - main_logger - example.py:89 - Running backtest
+2025-07-02 09:07:24,598 - INFO - main_logger - backtest_engine.py:377 - Starting backtest for EURUSDm on 16385
+2025-07-02 09:07:28,504 - INFO - main_logger - backtest_engine.py:1100 - ===== Backtest Summary =====
+2025-07-02 09:07:28,506 - INFO - main_logger - backtest_engine.py:1101 - Initial Balance: 10000.00
+2025-07-02 09:07:28,507 - INFO - main_logger - backtest_engine.py:1102 - Final Balance: 10000.00
+2025-07-02 09:07:28,509 - INFO - main_logger - backtest_engine.py:1103 - Net Profit: 0.00
+2025-07-02 09:07:28,510 - INFO - main_logger - backtest_engine.py:1104 - Total Trades: 0
+2025-07-02 09:07:28,511 - INFO - main_logger - backtest_engine.py:1105 - Win Rate: 0.00%
+2025-07-02 09:07:28,511 - INFO - main_logger - backtest_engine.py:1106 - Profit Factor: 0.00
+2025-07-02 09:07:28,512 - INFO - main_logger - backtest_engine.py:1107 - Max Drawdown: 0.00%
+2025-07-02 09:07:28,513 - INFO - main_logger - backtest_engine.py:1108 - Sharpe Ratio: 0.00
+2025-07-02 09:07:28,514 - INFO - main_logger - backtest_engine.py:1109 - Sortino Ratio: 0.00
+2025-07-02 09:07:28,514 - INFO - main_logger - backtest_engine.py:1110 - ============================
+2025-07-02 09:07:28,515 - INFO - main_logger - example.py:95 - Backtest completed
+2025-07-02 09:07:28,515 - INFO - main_logger - example.py:97 - Total trades: 0
+2025-07-02 09:07:28,516 - INFO - main_logger - example.py:98 - Win rate: 0.00%
+2025-07-02 09:07:28,517 - INFO - main_logger - example.py:99 - Profit factor: 0.00
+2025-07-02 09:07:28,517 - INFO - main_logger - example.py:100 - Sharpe ratio: 0.00
+2025-07-02 09:07:28,518 - INFO - main_logger - example.py:101 - Max drawdown: 0.00%
+2025-07-02 09:07:28,519 - INFO - main_logger - example.py:102 - Net profit: 0.00
+2025-07-02 09:07:28,519 - INFO - main_logger - example.py:105 - Generating visualizations
+2025-07-02 09:07:29,692 - WARNING - main_logger - example.py:129 - No trades available for analysis
+2025-07-02 09:07:31,814 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 09:07:31,815 - INFO - main_logger - example.py:164 - Backtest example completed
+2025-07-02 09:07:31,817 - INFO - main_logger - main.py:200 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:20:02,944 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:20:02,946 - INFO - main_logger - connect_mt5.py:36 - Connecting to MT5
+2025-07-02 09:20:02,948 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:20:02,953 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:20:02,954 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:20:02,956 - INFO - main_logger - connect_mt5.py:47 - Connected to MT5 Terminal:
+2025-07-02 09:20:02,958 - ERROR - main_logger - connect_mt5.py:99 - Error during MT5 connection test: 'version'
+2025-07-02 09:20:02,958 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 09:20:30,056 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:20:30,058 - INFO - main_logger - connect_mt5.py:36 - Connecting to MT5
+2025-07-02 09:20:30,059 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:20:30,065 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:20:30,068 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:20:30,073 - INFO - main_logger - connect_mt5.py:50 - Connected to MT5 Terminal:
+2025-07-02 09:20:30,078 - INFO - main_logger - connect_mt5.py:51 -   Version: N/A
+2025-07-02 09:20:30,082 - INFO - main_logger - connect_mt5.py:52 -   Path: C:\Program Files\MetaTrader 5
+2025-07-02 09:20:30,086 - INFO - main_logger - connect_mt5.py:53 -   Connected: True
+2025-07-02 09:20:30,087 - INFO - main_logger - connect_mt5.py:70 - 
+Account Information:
+2025-07-02 09:20:30,090 - INFO - main_logger - connect_mt5.py:71 -   Login: 273623864
+2025-07-02 09:20:30,093 - INFO - main_logger - connect_mt5.py:72 -   Server: Exness-MT5Trial6
+2025-07-02 09:20:30,093 - INFO - main_logger - connect_mt5.py:73 -   Name: Standard
+2025-07-02 09:20:30,096 - INFO - main_logger - connect_mt5.py:74 -   Currency: USD
+2025-07-02 09:20:30,097 - INFO - main_logger - connect_mt5.py:75 -   Leverage: 1:100
+2025-07-02 09:20:30,098 - INFO - main_logger - connect_mt5.py:76 -   Balance: 4887.45
+2025-07-02 09:20:30,099 - INFO - main_logger - connect_mt5.py:77 -   Equity: 4887.45
+2025-07-02 09:20:30,101 - INFO - main_logger - connect_mt5.py:78 -   Margin: 0.00
+2025-07-02 09:20:30,101 - INFO - main_logger - connect_mt5.py:79 -   Free Margin: 4887.45
+2025-07-02 09:20:30,188 - INFO - main_logger - connect_mt5.py:85 - 
+Available Symbols: 400
+2025-07-02 09:20:30,189 - INFO - main_logger - connect_mt5.py:87 -   Sample: USDRUB, USDAED, USDAMD, USDARS, USDAZN, USDBDT, USDBGN, USDBHD, USDBND, USDBRL...
+2025-07-02 09:20:30,190 - INFO - main_logger - connect_mt5.py:94 - 
+Testing data retrieval for configured symbols:
+2025-07-02 09:20:30,195 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for EURUSDm
+2025-07-02 09:20:30,202 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 08:30:00
+2025-07-02 09:20:30,204 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for GBPUSDm
+2025-07-02 09:20:30,205 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 08:30:00
+2025-07-02 09:20:30,205 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for USDJPYm
+2025-07-02 09:20:30,206 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 08:30:00
+2025-07-02 09:20:30,209 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for AUDUSDm
+2025-07-02 09:20:30,213 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 08:30:00
+2025-07-02 09:20:30,217 - INFO - main_logger - connect_mt5.py:103 - 
+MT5 connection test completed successfully
+2025-07-02 09:20:30,218 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 09:30:51,742 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:30:51,743 - INFO - main_logger - connect_mt5.py:36 - Connecting to MT5
+2025-07-02 09:30:51,743 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from c:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:30:51,751 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:30:51,753 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:30:51,755 - INFO - main_logger - connect_mt5.py:50 - Connected to MT5 Terminal:
+2025-07-02 09:30:51,757 - INFO - main_logger - connect_mt5.py:51 -   Version: N/A
+2025-07-02 09:30:51,757 - INFO - main_logger - connect_mt5.py:52 -   Path: C:\Program Files\MetaTrader 5
+2025-07-02 09:30:51,758 - INFO - main_logger - connect_mt5.py:53 -   Connected: True
+2025-07-02 09:30:51,759 - INFO - main_logger - connect_mt5.py:70 - 
+Account Information:
+2025-07-02 09:30:51,759 - INFO - main_logger - connect_mt5.py:71 -   Login: 273623864
+2025-07-02 09:30:51,760 - INFO - main_logger - connect_mt5.py:72 -   Server: Exness-MT5Trial6
+2025-07-02 09:30:51,763 - INFO - main_logger - connect_mt5.py:73 -   Name: Standard
+2025-07-02 09:30:51,765 - INFO - main_logger - connect_mt5.py:74 -   Currency: USD
+2025-07-02 09:30:51,766 - INFO - main_logger - connect_mt5.py:75 -   Leverage: 1:100
+2025-07-02 09:30:51,767 - INFO - main_logger - connect_mt5.py:76 -   Balance: 4887.45
+2025-07-02 09:30:51,768 - INFO - main_logger - connect_mt5.py:77 -   Equity: 4887.45
+2025-07-02 09:30:51,769 - INFO - main_logger - connect_mt5.py:78 -   Margin: 0.00
+2025-07-02 09:30:51,769 - INFO - main_logger - connect_mt5.py:79 -   Free Margin: 4887.45
+2025-07-02 09:30:51,796 - INFO - main_logger - connect_mt5.py:85 - 
+Available Symbols: 400
+2025-07-02 09:30:51,797 - INFO - main_logger - connect_mt5.py:87 -   Sample: USDRUB, USDAED, USDAMD, USDARS, USDAZN, USDBDT, USDBGN, USDBHD, USDBND, USDBRL...
+2025-07-02 09:30:51,799 - INFO - main_logger - connect_mt5.py:94 - 
+Testing data retrieval for configured symbols:
+2025-07-02 09:30:51,799 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for EURUSDm
+2025-07-02 09:30:51,800 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 09:30:00
+2025-07-02 09:30:51,801 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for GBPUSDm
+2025-07-02 09:30:51,802 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 09:30:00
+2025-07-02 09:30:51,803 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for USDJPYm
+2025-07-02 09:30:51,803 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 09:30:00
+2025-07-02 09:30:51,803 - INFO - main_logger - connect_mt5.py:98 -   Successfully retrieved data for AUDUSDm
+2025-07-02 09:30:51,804 - INFO - main_logger - connect_mt5.py:99 -   Latest bar time: 2025-07-02 09:30:00
+2025-07-02 09:30:51,805 - INFO - main_logger - connect_mt5.py:103 - 
+MT5 connection test completed successfully
+2025-07-02 09:30:51,806 - INFO - main_logger - mt5_config.py:216 - MT5 connection closed
+2025-07-02 09:44:10,114 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:44:10,136 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:44:10,139 - INFO - main_logger - main.py:50 - Starting SMC Liquidity Grab Strategy trading bot
+2025-07-02 09:44:10,142 - ERROR - main_logger - strategy_params.py:209 - Error loading strategy parameters: [Errno 2] No such file or directory: 'config/default_params.json'
+2025-07-02 09:44:10,146 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:44:10,157 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:44:10,159 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:44:10,995 - ERROR - main_logger - main.py:176 - Unexpected error: RiskManager.__init__() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 171, in main
+    run_trading_bot(args.config)
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 65, in run_trading_bot
+    risk_manager = RiskManager(mt5_config, params.risk_params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RiskManager.__init__() takes 2 positional arguments but 3 were given
+2025-07-02 09:44:10,998 - INFO - main_logger - main.py:179 - MT5 connection closed. Trading bot stopped.
+2025-07-02 09:48:37,501 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:48:37,505 - INFO - main_logger - logger.py:65 - Logger initialized
+2025-07-02 09:48:37,506 - INFO - main_logger - main.py:45 - Starting SMC Liquidity Grab Strategy trading bot
+2025-07-02 09:48:37,507 - ERROR - main_logger - strategy_params.py:209 - Error loading strategy parameters: [Errno 2] No such file or directory: 'config/default_params.json'
+2025-07-02 09:48:37,509 - INFO - main_logger - mt5_config.py:110 - MT5 credentials loaded from C:\Users\adity\OneDrive\Desktop\ALGO-BOT\config\mt5_credentials.json
+2025-07-02 09:48:37,517 - INFO - main_logger - mt5_config.py:187 - Connected to MT5 - Server: Exness-MT5Trial6
+2025-07-02 09:48:37,518 - INFO - main_logger - mt5_config.py:188 - Account: 273623864, Name: Standard, Balance: 4887.45, Equity: 4887.45
+2025-07-02 09:48:37,989 - ERROR - main_logger - main.py:157 - Unexpected error: RiskManager.__init__() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 152, in main
+    run_trading_bot(args.config)
+  File "C:\Users\adity\OneDrive\Desktop\ALGO-BOT\main.py", line 60, in run_trading_bot
+    risk_manager = RiskManager(mt5_config, params.risk_params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RiskManager.__init__() takes 2 positional arguments but 3 were given
+2025-07-02 09:48:37,991 - INFO - main_logger - main.py:160 - MT5 connection closed. Trading bot stopped.
